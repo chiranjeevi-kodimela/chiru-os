@@ -81,7 +81,7 @@ function Home() {
             <span className="prompt">$</span> status
           </p>
           <p>
-            <span className="status-dot" /> Open to software opportunities
+            Open to software opportunities
           </p>
 
           <p className="terminal-cursor">$ <span>_</span></p>
