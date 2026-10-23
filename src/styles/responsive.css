@@ -11,6 +11,7 @@
 @media (max-width: 1050px) {
   .workspace {
     grid-template-columns: 175px minmax(0, 1fr);
+    position: sticky;
   }
   .main-content {
     padding-right: 28px;
@@ -51,6 +52,7 @@
   }
   .navigation {
     flex-direction: row;
+    position: sticky;
     gap: 5px;
     overflow-x: auto;
   }

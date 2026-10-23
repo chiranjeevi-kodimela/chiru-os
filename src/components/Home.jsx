@@ -27,6 +27,13 @@ function Home() {
           <a className="primary-button" href="#projects">
             Explore my work <span>↗</span>
           </a>
+          <a
+            className="primary-button"
+            href="/Chiranjeevi_Kodimela_Resume.pdf"
+            download="Chiranjeevi_Kodimela_Resume.pdf"
+          >
+            Download Resume <span>↓</span>
+          </a>add 
           <a className="text-link" href="#contact">
             Get in touch <span>↗</span>
           </a>
@@ -65,7 +72,7 @@ function Home() {
         </div>
       </div>
 
-      
+
     </section>
   );
 }
