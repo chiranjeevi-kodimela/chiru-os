@@ -17,6 +17,8 @@
   --text: #e7ede3;
   --muted: #a0aa9a;
   --border: #303a2e;
+  --hover-bg: #252e23;
+  --accent: #9bd391;
 }
 #root {
   min-height: 100vh;

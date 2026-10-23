@@ -35,15 +35,25 @@
   min-width: 0;
   padding: 22px;
   background: var(--surface);
+  color: var(--text);
   border-right: 1px solid var(--border);
   border-bottom: 1px solid var(--border);
-  transition: background 180ms ease;
+  transition:
+    bordor-color 0.2s ease,
+    background-color 0.2s ease;
 }
 
 .skill-card:hover {
-  background: var(--accent-soft);
+  background: var(--surface);
+  color: var(--text);
+  border-color: var(--accent);
+  transform: none;
+  filter: none;
+  box-shadow: none;
 }
-
+.skill-card:hover * {
+  color: inherit;
+}
 .skill-card-top {
   display: flex;
   justify-content: space-between;

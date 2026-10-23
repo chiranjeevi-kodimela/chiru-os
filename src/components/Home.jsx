@@ -33,7 +33,7 @@ function Home() {
             download="Chiranjeevi_Kodimela_Resume.pdf"
           >
             Download Resume <span>↓</span>
-          </a>add 
+          </a>
           <a className="text-link" href="#contact">
             Get in touch <span>↗</span>
           </a>

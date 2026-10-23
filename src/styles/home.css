@@ -14,12 +14,12 @@
 }
 
 .terminal-title {
-  color: #8a9389;
+  color: var(--accent);
   font-size: 9px;
 }
 
 .hero-index {
-  color: #9aa198;
+  color: var(--muted);
   font-size: 10px;
   white-space: nowrap;
   margin-left: auto;
@@ -62,7 +62,7 @@
 .hero-description {
   max-width: 450px;
   margin: 22px 0 27px;
-  color: #697269;
+  color: var(--accent);
   font-size: 15px;
   line-height: 1.9;
 }
@@ -148,7 +148,7 @@
 }
 
 .terminal-title {
-  color: #8a9389;
+  color: var(--accent);
   font-size: 9px;
 }
 
