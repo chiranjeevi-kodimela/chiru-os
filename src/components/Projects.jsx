@@ -1,6 +1,5 @@
 const projects = [
     {
-        number: '01',
         name: 'Job Tracker',
         category: 'FULL-STACK WEB APPLICATION',
         description:
@@ -12,7 +11,6 @@ const projects = [
         liveLabel: 'Live demo'
     },
     {
-        number: '02',
         name: 'C++ Mini Compiler',
         category: 'C++ / LANGUAGE PROCESSING',
         description:
@@ -22,7 +20,6 @@ const projects = [
         label: 'Explore GitHub',
     },
     {
-        number: '03',
         name: 'Password Generator',
         category: 'WEB DEVELOPMENT',
         description:
@@ -34,7 +31,6 @@ const projects = [
         liveLabel: 'Live demo',
     },
     {
-        number: '04',
         name: 'Reaction Hunter',
         category: 'INTERACTIVE WEB GAME',
         description:
@@ -67,7 +63,6 @@ function Projects() {
                 {projects.map((project) => (
                     <article className="project-card" key={project.number}>
                         <div className="project-card-top">
-                            <span className="project-number">{project.number}</span>
                             <span className="project-category">{project.category}</span>
                         </div>
 

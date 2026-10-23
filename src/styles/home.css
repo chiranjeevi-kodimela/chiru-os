@@ -1,6 +1,3 @@
-.hero-index,
-.eyebrow,
-.terminal-title,
 .hero {
   position: relative;
   min-height: 475px;
@@ -11,6 +8,22 @@
   padding: 56px 0 70px;
 }
 
+.eyebrow {
+  color: var(--muted);
+  line-height: 1.8;
+}
+
+.terminal-title {
+  color: #8a9389;
+  font-size: 9px;
+}
+
+.hero-index {
+  color: #9aa198;
+  font-size: 10px;
+  white-space: nowrap;
+  margin-left: auto;
+}
 .hero-copy {
   max-width: 590px;
 }
@@ -91,6 +104,8 @@
 }
 
 .terminal {
+  display: flex;
+  flex-direction: column;
   overflow: hidden;
   border: 1px solid #d9dfd7;
   border-radius: 7px;
@@ -102,6 +117,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-shrink: 0;
   gap: 10px;
   padding: 15px 17px;
   border-bottom: 1px solid var(--border);
@@ -137,17 +153,18 @@
 }
 
 .terminal-body {
-  min-height: 240px;
-  padding: 23px;
+  min-height: auto;
+  flex: 1;
+  padding: 18px 22px;
   color: #58655a;
   font-family: var(--mono);
   font-size: 11px;
-  line-height: 1.9;
+  line-height: 1.7;
   overflow-wrap: anywhere;
 }
 
 .terminal-body p {
-  margin: 0 0 5px;
+  margin: 0 0 4px;
 }
 
 .prompt,
@@ -156,11 +173,11 @@
 }
 
 .terminal-command {
-  margin-top: 19px !important;
+  margin-top: 8px !important;
 }
 
 .terminal-cursor {
-  margin-top: 18px !important;
+  margin-top: 8px !important;
 }
 
 .terminal-cursor span {

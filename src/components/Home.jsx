@@ -40,6 +40,7 @@ function Home() {
             <span />
             <span />
           </div>
+          <div className="hero-index">PORTFOLIO / 2026</div>
           <span className="terminal-title">developer.profile</span>
         </div>
 
@@ -64,7 +65,7 @@ function Home() {
         </div>
       </div>
 
-      <div className="hero-index">PORTFOLIO / 2026</div>
+      
     </section>
   );
 }

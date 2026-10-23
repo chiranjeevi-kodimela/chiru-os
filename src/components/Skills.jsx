@@ -47,7 +47,6 @@ function Skills() {
         {skillGroups.map((group) => (
           <article className="skill-card" key={group.number}>
             <div className="skill-card-top">
-              <span className="skill-number">{group.number}</span>
               <span className="skill-arrow">↗</span>
             </div>
 
