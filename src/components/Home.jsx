@@ -1,3 +1,4 @@
+
 function Home() {
   return (
     <section className="hero">
@@ -19,14 +20,17 @@ function Home() {
         </p>
 
         <p className="hero-description">
-          I build practical software, explore how systems work,
-          and turn ideas into things people can actually use.
+          I build and deploy practical software using React,
+          Node.js, Express, and MySQL. I enjoy solving problems,
+          debugging systems, and turning ideas into working
+          applications.
         </p>
 
         <div className="hero-actions">
           <a className="primary-button" href="#projects">
-            Explore my work <span>↗</span>
+            View Projects <span>↗</span>
           </a>
+
           <a
             className="primary-button"
             href="/Chiranjeevi_Kodimela_Resume.pdf"
@@ -34,8 +38,14 @@ function Home() {
           >
             Download Resume <span>↓</span>
           </a>
-          <a className="text-link" href="#contact">
-            Get in touch <span>↗</span>
+
+          <a
+            className="text-link"
+            href="https://github.com/chiranjeevi-kodimela"
+            target="_blank"
+            rel="noreferrer"
+          >
+            GitHub <span>↗</span>
           </a>
         </div>
       </div>
@@ -56,23 +66,27 @@ function Home() {
           <p className="terminal-value">chiranjeevi-kodimela</p>
 
           <p className="terminal-command">
-            <span className="prompt">$</span> current_focus
+            <span className="prompt">$</span> tech_stack
           </p>
-          <p>Building useful software</p>
-          <p>Learning by shipping projects</p>
+          <p>React · JavaScript · Node.js</p>
+          <p>Express · MySQL · C++</p>
+
+          <p className="terminal-command">
+            <span className="prompt">$</span> currently_building
+          </p>
+          <p>Practical software projects</p>
+          <p>Learning by building and shipping</p>
 
           <p className="terminal-command">
             <span className="prompt">$</span> status
           </p>
           <p>
-            <span className="status-dot" /> Ready to build something
+            <span className="status-dot" /> Open to software opportunities
           </p>
 
           <p className="terminal-cursor">$ <span>_</span></p>
         </div>
       </div>
-
-
     </section>
   );
 }

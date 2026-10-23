@@ -3,7 +3,7 @@ function Contact() {
   return (
     <section className="contact-section" id="contact">
       <div className="section-heading">
-        <span className="section-index">05 / CONTACT</span>
+        <span className="section-index"></span>
         <span className="section-note">OPEN TO OPPORTUNITIES</span>
       </div>
 

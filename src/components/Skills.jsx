@@ -29,7 +29,7 @@ function Skills() {
   return (
     <section className="skills-section" id="skills">
       <div className="section-heading">
-        <span className="section-index">03 / TOOLKIT</span>
+        <span className="section-index"></span>
         <span className="section-note">TOOLS OF THE TRADE</span>
       </div>
 

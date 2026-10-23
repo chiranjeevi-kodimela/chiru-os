@@ -35,6 +35,26 @@
     padding-top: 56px;
   }
 
+  .hero-actions {
+    gap: 12px;
+  }
+
+  .hero-actions .primary-button {
+    justify-content: center;
+  }
+
+  .terminal-header {
+    flex-wrap: wrap;
+  }
+
+  .terminal-body {
+    padding: 16px;
+    font-size: 11px;
+  }
+
+  .other-works {
+    align-items: flex-start;
+  }
   .sidebar {
     position: fixed !important;
     top: 0;
@@ -155,6 +175,14 @@
   .project-card,
   .contact-content {
     padding: 18px;
+  }
+  .hero-actions .primary-button {
+    padding: 11px 12px;
+    gap: 10px;
+  }
+
+  .hero-role {
+    line-height: 1.8;
   }
   .section-heading {
     gap: 10px;

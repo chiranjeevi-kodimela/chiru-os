@@ -68,7 +68,7 @@
 }
 
 .skill-arrow {
-  color: #9aa198;
+  color: var(--muted);
   font-size: 17px;
 }
 

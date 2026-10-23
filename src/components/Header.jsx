@@ -6,10 +6,7 @@ function Header({ darkMode, onToggleTheme }) {
         <span>CHIRU.OS</span>
       </a>
 
-      <div className="system-status">
-        <span className="status-dot" />
-        AVAILABLE FOR OPPORTUNITIES
-      </div>
+      
       <button
         className="theme-toggle"
         type="button"

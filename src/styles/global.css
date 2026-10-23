@@ -7,6 +7,9 @@
   --border: #e1e5dd;
   --accent: #087f5b;
   --accent-soft: #e5f3ec;
+  --hover-bg: #eef2eb;
+  --button-text: #ffffff;
+  --button-hover: #066b4d;;
   --mono: "DM Mono", monospace;
 }
 
@@ -16,9 +19,12 @@
   --surface: #1a2019;
   --text: #e7ede3;
   --muted: #a0aa9a;
+  --accent: #9bd391;
+  --accent-soft: #263526;
   --border: #303a2e;
   --hover-bg: #252e23;
-  --accent: #9bd391;
+  --button-text: #111510;
+  --button-hover: #b4e6aa;
 }
 #root {
   min-height: 100vh;

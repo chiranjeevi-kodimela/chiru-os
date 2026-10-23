@@ -2,7 +2,7 @@ function About() {
   return (
     <section className="about-section" id="about">
       <div className="section-heading">
-        <span className="section-index">01 / ABOUT ME</span>
+        <span className="section-index"></span>
         <span className="section-note">A LITTLE CONTEXT</span>
       </div>
 

@@ -73,7 +73,7 @@
 .hero-description {
   max-width: 450px;
   margin: 22px 0 27px;
-  color: var(--accent);
+  color: var(--muted);
   font-size: 15px;
   line-height: 1.9;
 }
@@ -93,7 +93,7 @@
   border: 1px solid var(--accent);
   border-radius: 3px;
   background: var(--accent);
-  color: #ffffff;
+  color: var(--button-text);
   font-size: 12px;
   transition:
     transform 180ms ease,
@@ -101,13 +101,13 @@
 }
 
 .primary-button:hover {
-  background: #066b4d;
+  background: var(--button-hover);
   transform: translateY(-2px);
 }
 
 .text-link {
   font-size: 12px;
-  color: #525d53;
+  color: var(--text);
 }
 
 .text-link span {
@@ -119,6 +119,7 @@
   flex-direction: column;
   overflow: hidden;
   border: 1px solid #d9dfd7;
+  border-color: var(--border);
   border-radius: 7px;
   background: var(--surface);
   box-shadow: 0 18px 55px rgba(37, 55, 38, 0.055);
@@ -167,7 +168,7 @@
   min-height: auto;
   flex: 1;
   padding: 18px 22px;
-  color: #58655a;
+  color: var(--muted);
   font-family: var(--mono);
   font-size: 11px;
   line-height: 1.7;

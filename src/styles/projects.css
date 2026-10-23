@@ -66,6 +66,18 @@
   overflow-wrap: anywhere;
 }
 
+.project-highlight {
+  margin: 12px 0 18px;
+  color: var(--muted);
+  font-size: 12px;
+  line-height: 1.7;
+}
+
+.project-highlight span {
+  color: var(--accent);
+  margin-right: 4px;
+}
+
 .other-works {
   display: flex;
   align-items: center;
@@ -76,7 +88,9 @@
   border: 1px solid var(--border);
   border-radius: 6px;
   background: var(--surface);
-  transition: border-color 180ms ease, transform 180ms ease;
+  transition:
+    border-color 180ms ease,
+    transform 180ms ease;
 }
 
 .other-works:hover {
