@@ -17,12 +17,23 @@
   color: var(--accent);
   font-size: 9px;
 }
-
-.hero-index {
+.availability-status {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin: 0;
   color: var(--muted);
-  font-size: 10px;
-  white-space: nowrap;
-  margin-left: auto;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+.availability-status .status-dot {
+  width: 7px;
+  height: 7px;
+  flex-shrink: 0;
+  border-radius: 50%;
+  background: #69b783;
 }
 .hero-copy {
   max-width: 590px;
