@@ -16,7 +16,7 @@ const projects = [
         description:
             'A mini compiler featuring lexical analysis, parsing, an abstract syntax tree, and expression evaluation.',
         stack: ['C++', 'Lexer', 'Parser', 'AST'],
-        link: 'https://github.com/chiranjeevi-kodimela',
+        link: 'https://github.com/chiranjeevi-kodimela/mini-compiler',
         label: 'Explore GitHub',
     },
     {
@@ -61,7 +61,7 @@ function Projects() {
 
             <div className="projects-grid">
                 {projects.map((project) => (
-                    <article className="project-card" key={project.number}>
+                    <article className="project-card" key={project.name}>
                         <div className="project-card-top">
                             <span className="project-category">{project.category}</span>
                         </div>

@@ -1,16 +1,43 @@
-# React + Vite
+# CHIRU.OS — Developer Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A personal developer portfolio built with React, JavaScript, Vite, and CSS. Features a developer-workspace design, responsive navigation, light and dark themes, and selected software projects.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- Responsive portfolio layout
+- Light and dark theme toggle with saved preference
+- Active section navigation
+- Project cards with repository and live-demo links
+- Downloadable resume
+- Skills, background, and contact sections
 
-## React Compiler
+## Tech Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- React
+- JavaScript
+- Vite
+- CSS
 
-## Expanding the ESLint configuration
+## Run Locally
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+```bash
+git clone https://github.com/chiranjeevi-kodimela/chiru-os.git
+cd chiru-os
+npm install
+npm run dev
+```
+
+## Build for Production
+
+```bash
+npm run lint
+npm run build
+npm run preview
+```
+
+## Author
+
+**Chiranjeevi Kodimela**
+
+- GitHub: https://github.com/chiranjeevi-kodimela
+- LinkedIn: https://www.linkedin.com/in/chiranjeevi-kodimela/

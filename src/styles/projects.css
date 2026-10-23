@@ -80,7 +80,7 @@
 }
 
 .other-works:hover {
-  border-color: #a8cbb7;
+  border-color: var(--accent);
   transform: translateY(-2px);
 }
 
