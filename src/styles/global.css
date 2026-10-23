@@ -1,4 +1,5 @@
 :root {
+  color-scheme: light;
   --page: #f7f8f5;
   --surface: #ffffff;
   --text: #202720;
@@ -9,6 +10,14 @@
   --mono: "DM Mono", monospace;
 }
 
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --page: #111510;
+  --surface: #1a2019;
+  --text: #e7ede3;
+  --muted: #a0aa9a;
+  --border: #303a2e;
+}
 #root {
   min-height: 100vh;
 }

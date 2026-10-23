@@ -3,7 +3,20 @@
   min-height: 100vh;
   background: var(--page);
 }
+.theme-toggle {
+  padding: 8px 12px;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  background: var(--surface);
+  color: var(--text);
+  font: inherit;
+  font-size: 12px;
+  cursor: pointer;
+}
 
+.theme-toggle:hover {
+  border-color: var(--accent, #8acb88);
+}
 .topbar {
   height: 66px;
   padding: 0 34px;

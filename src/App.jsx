@@ -1,4 +1,4 @@
-
+import { useEffect, useState } from "react";
 import Header from './components/Header';
 import Sidebar from './components/Sidebar';
 import Home from './components/Home';
@@ -9,9 +9,27 @@ import Contact from './components/Contact';
 import Footer from './components/Footer';
 
 function App() {
+  const [darkMode, setDarkMode] = useState(() => {
+    return localStorage.getItem("portfolio-theme") === "dark";
+  });
+
+  useEffect(() => {
+    document.documentElement.setAttribute(
+      "data-theme",
+      darkMode ? "dark" : "light"
+    );
+
+    localStorage.setItem(
+      "portfolio-theme",
+      darkMode ? "dark" : "light"
+    );
+  }, [darkMode]);
   return (
     <div className="portfolio">
-      <Header />
+      <Header 
+        darkMode={darkMode}
+        onToggleTheme={() => setDarkMode((prev) => !prev)}
+      />
 
       <div className="workspace">
         <Sidebar />
