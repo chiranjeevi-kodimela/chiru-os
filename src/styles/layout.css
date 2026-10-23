@@ -1,0 +1,148 @@
+.system-status,
+.portfolio {
+  min-height: 100vh;
+  background: var(--page);
+}
+
+.topbar {
+  height: 66px;
+  padding: 0 34px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--border);
+  background: var(--surface);
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  font-family: var(--mono);
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: -0.5px;
+}
+
+.brand-mark {
+  color: var(--accent);
+  font-size: 21px;
+  font-weight: 500;
+}
+
+.system-status,
+.sidebar-label,
+.sidebar-footer,
+.page-footer {
+  font-family: var(--mono);
+  font-size: 10px;
+  letter-spacing: 0.7px;
+}
+
+.system-status {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  color: var(--muted);
+}
+
+.status-dot {
+  display: inline-block;
+  width: 7px;
+  height: 7px;
+  flex-shrink: 0;
+  border-radius: 50%;
+  background: #16966b;
+}
+
+.workspace {
+  display: grid;
+  grid-template-columns: 220px minmax(0, 1fr);
+}
+
+.sidebar {
+  position: sticky;
+  top: 24px;
+  align-self: start;
+  height: calc(100vh - 48px);
+  overflow-y: auto;
+  min-height: calc(100vh - 66px);
+  padding: 36px 19px 24px;
+  border-right: 1px solid var(--border);
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar-label {
+  margin: 0 0 28px 12px;
+  color: #9aa198;
+}
+
+.navigation {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.nav-link {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  padding: 13px 12px;
+  border-radius: 4px;
+  color: #626c63;
+  font-size: 13px;
+  transition:
+    background 180ms ease,
+    color 180ms ease;
+}
+
+.nav-link:hover,
+.nav-link.active {
+  color: var(--accent);
+  background: var(--accent-soft);
+}
+
+.nav-number {
+  font-family: var(--mono);
+  font-size: 10px;
+  color: #a1aaa0;
+}
+
+.nav-link.active .nav-number {
+  color: var(--accent);
+}
+
+.sidebar-footer {
+  margin-top: auto;
+  padding: 20px 10px 0;
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  color: var(--muted);
+}
+
+.main-content {
+  min-width: 0;
+  padding: 0 46px;
+}
+
+.placeholder-section {
+  padding: 38px 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.placeholder-section p {
+  margin: 18px 0 0;
+  font-size: 21px;
+  letter-spacing: -0.6px;
+}
+
+.page-footer {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+  padding: 26px 0;
+  color: #8b948a;
+  font-size: 9px;
+}

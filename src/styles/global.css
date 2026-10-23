@@ -1,0 +1,48 @@
+:root {
+  --page: #f7f8f5;
+  --surface: #ffffff;
+  --text: #202720;
+  --muted: #778078;
+  --border: #e1e5dd;
+  --accent: #087f5b;
+  --accent-soft: #e5f3ec;
+  --mono: "DM Mono", monospace;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: var(--page);
+  color: var(--text);
+  font-family: "DM Sans", sans-serif;
+}
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img,
+svg {
+  max-width: 100%;
+}

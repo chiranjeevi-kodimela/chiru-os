@@ -1,35 +1,72 @@
-const navigation = [
-  { label: 'Home', href: '#home', number: '01' },
-  { label: 'About', href: '#about', number: '02' },
-  { label: 'Projects', href: '#projects', number: '03' },
-  { label: 'Skills', href: '#skills', number: '04' },
-  { label: 'Contact', href: '#contact', number: '05' },
+import { useEffect, useState } from 'react';
+
+const navItems = [
+    { id: 'home', number: '01', label: 'Home' },
+    { id: 'about', number: '02', label: 'About' },
+    { id: 'projects', number: '03', label: 'Projects' },
+    { id: 'skills', number: '04', label: 'Skills' },
+    { id: 'contact', number: '05', label: 'Contact' },
 ];
 
 function Sidebar() {
-  return (
-    <aside className="sidebar">
-      <p className="sidebar-label">WORKSPACE / 01</p>
+    const [activeSection, setActiveSection] = useState('home');
 
-      <nav className="navigation">
-        {navigation.map((item, index) => (
-          <a
-            className={`nav-link ${index === 0 ? 'active' : ''}`}
-            href={item.href}
-            key={item.label}
-          >
-            <span className="nav-number">{item.number}</span>
-            <span>{item.label}</span>
-          </a>
-        ))}
-      </nav>
+    useEffect(() => {
+        const sections = navItems
+            .map((item) => document.getElementById(item.id))
+            .filter(Boolean);
 
-      <div className="sidebar-footer">
-        <span className="status-dot" />
-        <span>Building in public</span>
-      </div>
-    </aside>
-  );
+        const observer = new IntersectionObserver(
+            (entries) => {
+                const visibleSections = entries
+                    .filter((entry) => entry.isIntersecting)
+                    .sort(
+                        (a, b) =>
+                            a.boundingClientRect.top - b.boundingClientRect.top
+                    );
+
+                if (visibleSections.length > 0) {
+                    setActiveSection(visibleSections[0].target.id);
+                }
+            },
+            {
+                rootMargin: '-15% 0px -65% 0px',
+                threshold: 0,
+            }
+        );
+
+        sections.forEach((section) => observer.observe(section));
+
+        return () => observer.disconnect();
+    }, []);
+
+    return (
+        <aside className="sidebar">
+            <div className="sidebar-inner">
+                <span className="sidebar-label">NAVIGATION</span>
+
+                <nav className="sidebar-nav" aria-label="Main navigation">
+                    {navItems.map((item) => (
+                        <a
+                            key={item.id}
+                            href={`#${item.id}`}
+                            className={`nav-link ${activeSection === item.id ? 'active' : ''
+                                }`}
+                            onClick={() => setActiveSection(item.id)}
+                        >
+                            <span className="nav-number">{item.number}</span>
+                            <span>{item.label}</span>
+                        </a>
+                    ))}
+                </nav>
+
+                <div className="sidebar-footer">
+                    <span className="status-dot" />
+                    <span>Building in public</span>
+                </div>
+            </div>
+        </aside>
+    );
 }
 
 export default Sidebar;
