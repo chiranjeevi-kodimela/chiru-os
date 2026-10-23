@@ -1,3 +1,4 @@
+@import "./layout.css";
 @media (min-width: 1500px) {
   .main-content {
     padding-right: 70px;
@@ -11,7 +12,6 @@
 @media (max-width: 1050px) {
   .workspace {
     grid-template-columns: 175px minmax(0, 1fr);
-    position: sticky;
   }
   .main-content {
     padding-right: 28px;
@@ -27,208 +27,120 @@
   }
 }
 
-@media (max-width: 650px) {
-  .topbar {
-    height: 58px;
-    padding: 0 18px;
-  }
-  .system-status {
-    font-size: 8px;
-  }
-  .workspace {
-    display: grid;
-    grid-template-columns: 220px minmax(0, 1fr);
-    align-items: start;
-  }
-  .sidebar {
-    min-height: auto;
-    padding: 10px 14px;
-    border-right: 0;
-    border-bottom: 1px solid var(--border);
-  }
-  .sidebar-label,
-  .sidebar-footer {
-    display: none;
-  }
-  .navigation {
-    flex-direction: row;
-    position: sticky;
-    gap: 5px;
-    overflow-x: auto;
-  }
-  .nav-link {
-    flex-shrink: 0;
-    gap: 7px;
-    padding: 10px;
-    font-size: 11px;
-  }
-  .nav-number {
-    display: none;
-  }
-  .main-content {
-    padding: 0 20px;
-  }
-  .hero {
-    min-height: auto;
-    padding: 54px 0 60px;
-    gap: 35px;
-  }
-  .hero h1 {
-    font-size: clamp(42px, 11vw, 62px);
-    letter-spacing: -2.5px;
-  }
-  .hero-description {
-    font-size: 14px;
-  }
-  .about-grid {
-    grid-template-columns: 1fr;
-    gap: 30px;
-  }
-  .section-heading {
-    align-items: flex-start;
-  }
-  .section-note {
-    text-align: right;
-  }
-  .terminal-body {
-    padding: 18px;
-  }
-  .placeholder-section p {
-    font-size: 18px;
-  }
-  .projects-grid {
-    grid-template-columns: minmax(0, 1fr);
-    row-gap: 18px;
-  }
-  .project-card {
-    padding: 22px;
-  }
-  .other-works {
-    padding: 22px;
-  }
-  .skills-grid {
-    grid-template-columns: 1fr;
-  }
-  .skill-card {
-    padding: 19px;
-  }
-  .contact-content {
-    padding: 22px;
-  }
-  .contact-content h2 {
-    letter-spacing: -1.2px;
-  }
-  .contact-links {
-    align-items: flex-start;
-    gap: 18px;
-  }
-  .page-footer {
-    flex-wrap: wrap;
-    font-size: 8px;
-  }
-}
-
 @media (max-width: 768px) {
-  /* Main layout */
   .workspace {
     display: grid;
     grid-template-columns: minmax(0, 1fr);
     align-items: start;
     padding-top: 56px;
   }
-  .main-content {
-    width: 100%;
-    min-width: 0;
-    padding: 20px 18px;
-  }
-  /* Keep navigation visible and make it horizontal */
+
   .sidebar {
-    position: fixed;
+    position: fixed !important;
     top: 0;
     left: 0;
     right: 0;
     z-index: 1000;
     width: 100%;
     height: auto;
+    min-height: 0;
     max-height: none;
+    padding: 0;
     overflow-x: auto;
     overflow-y: hidden;
-    padding: 0;
     background: var(--page);
     border-right: none;
     border-bottom: 1px solid var(--border);
   }
+
   .sidebar-inner {
     width: max-content;
     min-width: 100%;
     padding: 10px 14px;
   }
+
   .sidebar-label,
   .sidebar-footer {
     display: none;
   }
-  .sidebar-nav {
+
+  .navigation {
     display: flex;
     flex-direction: row;
     align-items: center;
     gap: 6px;
     width: max-content;
   }
+
   .nav-link {
     flex-shrink: 0;
     white-space: nowrap;
     padding: 10px 12px;
   }
-  /* Hero: stack text and terminal */
+
+  .nav-number {
+    display: none;
+  }
+
+  .main-content {
+    width: 100%;
+    min-width: 0;
+    padding: 20px 18px;
+  }
+
   .hero {
     grid-template-columns: minmax(0, 1fr);
     gap: 28px;
   }
+
   .hero > * {
     min-width: 0;
     max-width: 100%;
   }
+
   .hero h1 {
     font-size: clamp(36px, 9vw, 54px);
     overflow-wrap: anywhere;
   }
-  /* Prevent terminal content from overflowing */
+
   .terminal,
   .terminal-window {
     width: 100%;
     min-width: 0;
     max-width: 100%;
   }
-  /* Stack cards */
+
+  .about-grid,
+  .about-details,
   .projects-grid,
   .skills-grid {
     grid-template-columns: minmax(0, 1fr);
   }
+
   .project-card {
     min-width: 0;
     padding: 22px;
   }
+
   .project-description {
     min-height: 0;
   }
-  /* About and contact content */
-  .about-grid,
-  .about-details {
-    grid-template-columns: minmax(0, 1fr);
-  }
+
   .contact-content {
     padding: 22px;
   }
+
   .contact-content h2 {
     font-size: clamp(32px, 8vw, 46px);
     letter-spacing: -1px;
     overflow-wrap: anywhere;
   }
+
   .contact-links {
     flex-wrap: wrap;
     gap: 16px;
   }
-  /* Prevent long text from forcing horizontal scrolling */
+
   .main-content,
   .main-content section,
   .project-card,
@@ -236,7 +148,6 @@
     overflow-wrap: anywhere;
   }
 }
-
 @media (max-width: 400px) {
   .main-content {
     padding: 16px 12px;

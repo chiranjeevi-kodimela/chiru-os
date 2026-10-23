@@ -103,10 +103,22 @@
   background: var(--accent-soft);
 }
 
-.nav-number {
-  font-family: var(--mono);
-  font-size: 10px;
-  color: #a1aaa0;
+.nav-link {
+  transition:
+    color 180ms ease,
+    background-color 180ms ease,
+    border-color 180ms ease;
+}
+
+.nav-link.active {
+  color: var(--accent);
+  background: rgba(22, 120, 80, 0.07);
+  border-color: var(--accent);
+}
+
+.nav-link:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
 }
 
 .nav-link.active .nav-number {
